@@ -20,8 +20,8 @@ def backspaceCompare(s, t):
     #     return m    
     # return x(s) == x(t)
 
-# print(backspaceCompare("ab#c", "ad#c"))
-# print(backspaceCompare("ab##", "c#d#"))
-# print(backspaceCompare("a#c", "b"))
+print(backspaceCompare("ab#c", "ad#c"))
+print(backspaceCompare("ab##", "c#d#"))
+print(backspaceCompare("a#c", "b"))
 print(backspaceCompare("oi###mupo##rszty#s#xu###bxx##dqc#gdjz", "oi###mu#ueo##pk#o##rsztu#y#s#xu###bxx##dqc#gz#djz"))
 
