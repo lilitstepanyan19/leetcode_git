@@ -1,18 +1,15 @@
 def longestCommonPrefix(strs):
-    c = 1
-    
-    for i in range(len(strs[0])):
-        m = strs[0]
-        if m in strs[1:i]:
-            c += 1
-            print(m)
-     
-            m = strs[0][:-i]
-            print(m)
-    if c == len(strs):
-        return m, c
-
-    return 'x', c
+    ml = ''
+    mw = min(strs)
+    for i in range(len(mw)):
+        for el in strs:
+            if ml == len(el) or el[i] != mw[i]:
+                return ml
+        ml += strs[0][i]
+    return ml
 
 print(longestCommonPrefix(["flower","flow","flight"]))
 print(longestCommonPrefix(["dog","racecar","car"]))
+print(longestCommonPrefix(["aac","a","ccc"]))
+print(longestCommonPrefix(["ab","a"]))
+   
