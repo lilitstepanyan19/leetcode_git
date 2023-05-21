@@ -1,5 +1,5 @@
 def isIsomorphic(s, t):
-    return map(s.find,s) == map(t.find,t)
+    return list(map(s.find,s)) == list(map(t.find,t))
 
     # for i in range( len(s)):
     #         if t[i] not in s or s[i] == t[i]:
