@@ -1,10 +1,22 @@
 def isPowerOfTwo(n):
-
-    if n < 1:
-            return False
-    if n == 1:
+    i = 0
+    while i <= n/2:
+        x = 2 ** i
+        if x == n:
             return True
-    return isPowerOfTwo(n/2)
+        if x > n:
+            return False
+        i += 1
+    return False
+    
+    
+    
+    
+#     if n < 1:
+#             return False
+#     if n == 1:
+#             return True
+#     return isPowerOfTwo(n/2)
 
     # x = n / 2
     # for i in range(int(x)):
@@ -15,4 +27,4 @@ def isPowerOfTwo(n):
 print(isPowerOfTwo(1))
 print(isPowerOfTwo(16))
 print(isPowerOfTwo(3))
-# print(isPowerOfTwo(65537))
+print(isPowerOfTwo(65537))
